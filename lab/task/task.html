@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name:</label>
+<input type="text" class="form-control" name="name" id="name" required>
+
+<label for="iname">ID:</label>
+<input type="text" class="form-control" name="id" id="iname" required>
+
+<label for="email">Email Address:</label>
+<input type="email" class="form-control" name="email" id="email" required>
+
+<label for="phone">Phone Number:</label>
+<input type="tel" class="form-control" name="phone" id="phone" required>
+
+<label for="dob">Date of Birth:</label>
+<input type="date" class="form-control" name="dob" id="dob" required>
+
+<p><b>Gender:</b></p>
+label>
+    <input type="radio" class="rc" name="gender" value="Male">Male
+</label>
+<label>
+    <input type="radio" class="rc" name="gender" value="Female">Female
+</label>
+
+<label>
+    <input type="radio" class="rc" name="gender" value="Others">
+    Others
+</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="CSE" selected>CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="BBA">BBA</option>
+                <option value="English">English</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+            </select>
+
+            <label for="semester">Semester</label>
+            <select id="semester" name="semester" required>
+                <option value="1st Semester">1st Semester</option>
+                <option value="2nd Semester">2nd Semester</option>
+                <option value="3rd Semester">3rd Semester</option>
+                <option value="4th Semester">4th Semester</option>
+                <option value="5th Semester">5th Semester</option>
+                <option value="6th Semester">6th Semester</option>
+                <option value="7th Semester">7th Semester</option>
+                <option value="8th Semester">8th Semester</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+
+            <p><b>Select Programming Languages Known:</b></p>
+            <br>
+
+            <label>
+    <input type="checkbox" class="rc" value="C" name="skill">
+    C
+</label>
+
+<label>
+    <input type="checkbox" class="rc" value="C++" name="skill">C++
+</label>
+<label>
+    <input type="checkbox" class="rc" value="Java" name="skill">Java
+</label>
+
+<label>
+    <input type="checkbox" class="rc" value="Python" name="skill"> Python
+</label>
+<label>
+    <input type="checkbox" class="rc" value="JavaScript" name="skill">JavaScript
+</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+        <label for="address"><b>Address:</b></label>
+        <textarea class="form-control" id="address" name="address" rows="4" placeholder="Enter your address here" required></textarea>
+        <label for="photo"><b>Upload Student Photo:</b></label>
+        <input type="file" class="file-upload" id="photo" name="photo">
+        <br>
+        <label for="comments"><b>Comments/Suggestions:</b></label> <textarea class="form-control" id="comments" name="comments" rows="4" maxlength="200" placeholder="Enter your comments here"></textarea>
+        </fieldset>
+
+<div class="button-group">
+    <input type="submit" class="btn" value="Submit">
+    <input type="reset" class="btn" value="Reset">
+</div>
+
+    </form>
+
+</body>
+</html>
