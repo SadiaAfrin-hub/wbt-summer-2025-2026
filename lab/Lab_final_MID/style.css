@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: #90a0b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.container {
+    width: 500px;
+    background: #a4caf0;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0d2453;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color:#0d2453
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 450px;
+    background-color: #e7d7a9;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+.radio-group,
+.checkbox-group {
+    margin-top: 8px;
+      margin-right: 5px;
+    margin-left: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+.error {
+    display: block;
+    color: rgb(153, 6, 6);
+    font-size: 13px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+.errorBorder {
+    border: 2px solid rgb(166, 4, 4) !important;
+}
+
+.successBorder {
+    border: 2px solid rgb(10, 80, 10) !important;
+}
+
+button {
+    width: 450px;
+    margin-top: 25px;
+    padding: 12px;
+    background: #1f4e81;
+    color: rgb(229, 218, 218);
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #299625;
+}

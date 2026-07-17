@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Club Membership Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h3>University Club Membership Registration</h3>
+
+        <form id="myForm">
+
+
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" >
+            <small id="firstNameError" class="error"></small>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName">
+            <small id="lastNameError" class="error"></small>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" >
+            <small id="emailError" class="error"></small>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" >
+            <small id="passwordError" class="error"></small>
+
+            <label>Gender</label>
+            <div class="radio-group">
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+
+            </div>
+
+            <small id="genderError" class="error"></small>
+            <label>Interested Clubs</label>
+
+            <div class="checkbox-group">
+
+                <input type="checkbox" id="ACC" name="club" value="AIUB Computer Club">
+                <label for="computer">AIUB Computer Club</label>
+                <input type="checkbox" id="AFC" name="club" value="AIUB Film Club">
+                <label for="film">Cultural Club</label>
+                <input type="checkbox" id="ABC" name="club" value="AIUB Business Club">
+                <label for="business">AIUB Business Club</label>
+                <input type="checkbox" id="AEC" name="club" value="AIUB English Club">
+                <label for="english">AIUB English Club</label>
+                <input type="checkbox" id="AAC" name="club" value="AIUB Arts Club">
+                <label for="arts">AIUB Arts Club</label>
+
+            </div>
+
+            <small id="clubError" class="error"></small>
+             <label for="category">Club Category</label>
+
+            <select id="category">
+                <option value="">Select Category</option>
+               <option value="computer">FST</option>
+                <option value="film">Cultural</option>
+                <option value="business">FBA</option>
+                <option value="english">English</option>
+                <option value="arts">Arts & Crafts</option>
+            </select>
+
+            <id="categoryError" class="error"></small>
+            <label for="reason">Why do you want to join?</label>
+            <textarea id="reason" rows="4" minlength="20"
+                placeholder="Tell us why do you want to join?"></textarea>
+            <id="reasonError" class="error"></small>
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
