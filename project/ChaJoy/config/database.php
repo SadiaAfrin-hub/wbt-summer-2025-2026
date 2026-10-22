@@ -2,8 +2,8 @@
 $db_host = "localhost";
 $db_user = "root";
 $db_pass = "";
-$db_name = "ChaJoy";
-$db_port = 3307;
+$db_name = "chajoy";
+$db_port = 3306;
 
 $conn = new mysqli(
     $db_host,
