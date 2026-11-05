@@ -88,19 +88,3 @@ the site works immediately with zero setup. To use real photos:
 2. In the view files (e.g. `views/customer/home.php`, `beverages.php`),
    replace `<div class="beverage-img">🥤</div>` with
    `<img src="public/images/<?php echo $b['image']; ?>" class="beverage-img">`.
-
-## 6. Notes for Your Report / Viva
-
-- **Conditionals**: role checks (`requireRole`), stock availability checks,
-  order-status logic, cancel-button visibility (`canCancelOrder()`).
-- **Loops**: `foreach` used throughout views to render beverages, cart items,
-  orders, categories.
-- **Strings**: `generateOrderId()`, `slugify()`, `truncateText()`,
-  `formatMoney()` in `includes/functions.php` use `strlen()`, `substr()`,
-  `strtolower()`, `str_replace()`, `strtoupper()`.
-- **AJAX + JSON**: beverage search/filter, add/update/remove cart item,
-  admin order status update, delivery pickup/delivered — all return
-  `json_encode()`'d responses consumed by vanilla `XMLHttpRequest`.
-- **Security**: `password_hash()`/`password_verify()`, prepared statements
-  everywhere, `htmlspecialchars()` output escaping via the `clean()` helper,
-  session-based auth, role-based route guards.
